@@ -37,13 +37,14 @@ class form extends Component {
       this.state.close_date !== null &&
       event.getTime() > this.state.close_date.getTime()
     ) {
-      document.getElementById("error").innerHTML = "* Opening date cannot be greater than Closing date"
+      document.getElementById("error").innerHTML =
+        "* Opening date cannot be greater than Closing date";
       window.setTimeout(() => document.getElementById("error").focus(), 0);
     } else {
       this.setState({
         open_date: event,
       });
-      document.getElementById("error").innerHTML = ""
+      document.getElementById("error").innerHTML = "";
     }
   };
   closeDateHandler = (event) => {
@@ -51,13 +52,14 @@ class form extends Component {
       this.state.open_date !== null &&
       this.state.open_date.getTime() > event.getTime()
     ) {
-      document.getElementById("error").innerHTML = "* Closing date cannot be lesser than Opening date"
+      document.getElementById("error").innerHTML =
+        "* Closing date cannot be lesser than Opening date";
       window.setTimeout(() => document.getElementById("error").focus(), 0);
     } else {
       this.setState({
         close_date: event,
       });
-      document.getElementById("error").innerHTML = ""
+      document.getElementById("error").innerHTML = "";
     }
   };
 
@@ -80,7 +82,8 @@ class form extends Component {
   render() {
     return (
       <div className="parentFlex">
-        <form id="main"
+        <form
+          id="main"
           className="row g-4  form-control flexform"
           onSubmit={this.props.submitHandler}
         >
@@ -95,7 +98,7 @@ class form extends Component {
               id="shopname"
               name="shopname"
               required
-              pattern=".{5}[A-Za-z]+"
+              pattern="[A-Za-z ]{6,}"
               title="Only alphabets and minimum 6 characters allowed"
               value={this.state.shop_name}
               onChange={this.shopNameHandler}
