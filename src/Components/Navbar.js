@@ -9,7 +9,7 @@ class Navbar extends Component {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <a className="navbar-brand">
-              Navbar
+              <img src="..." alt="LoGo" />
             </a>
             <button
               className="navbar-toggler"
