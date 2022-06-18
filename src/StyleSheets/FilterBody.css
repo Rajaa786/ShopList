@@ -1,0 +1,32 @@
+.filter-group {
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid rgb(54, 40, 82); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.filterName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.form-check input{
+  transform: scale(1.5);
+}
+

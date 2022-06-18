@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.form-control:focus {
+  border-color: #75a1e0;
+  box-shadow: 0 0 0 0.2rem rgb(166 189 220 / 25%);
+}
+
+.navStick {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  background-image: linear-gradient(125deg, rgb(54, 40, 82), rgb(73, 57, 109));
+}
+
+/* .navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+} */
+
+.navbar-light .navbar-nav .nav-link.active {
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active:active {
+  /* color: rgb(212, 210, 208); */
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link.active:visited {
+  /* color: rgb(212, 210, 208); */
+  background: rgb(96, 158, 239);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(212, 210, 208);
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgb(212, 210, 208);
+}
+
+.btn-outline-success {
+  color: #11d77b;
+  border-color: #11d77b;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+
+/* .navbar {
+  /* height: 15vh; */
+/* }  */
+
+.appName {
+  color: white;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+  padding: 15px;
+}
+
+.fa-solid,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 4px;
+}
